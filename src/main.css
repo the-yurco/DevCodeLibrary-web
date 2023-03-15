@@ -1,0 +1,10 @@
+/*
+  0 - 600: Phone
+  600 - 900: Tablet portrait
+  900 - 1200: Tablet landscape
+  1200 - 1800: Normal styles
+  1800+ : Big Desktop
+  1em = 16px
+  The smaller device rules always should write below the bigger device rules
+  Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+  */
