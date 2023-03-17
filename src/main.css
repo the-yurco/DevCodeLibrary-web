@@ -8,3 +8,9 @@
   The smaller device rules always should write below the bigger device rules
   Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
   */
+* {
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 0;
+  text-decoration: none !important;
+}
