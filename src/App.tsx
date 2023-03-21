@@ -1,9 +1,5 @@
 import { useState } from "react";
-import "./main.css";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import Layout from "./components/Layout/Layout";
-// import Home from "./pages/home/Home";
+import "./main.scss";
 
 function App() {
   return (
