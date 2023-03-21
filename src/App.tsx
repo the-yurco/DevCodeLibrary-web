@@ -1,17 +1,13 @@
 import { useState } from "react";
 import "./main.scss";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./setup/router/Router";
 
 function App() {
   return (
-    <div>
-      <h1>Home</h1>
-      <a href="#">I am link</a>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugit
-        quae consequatur ipsum nostrum pariatur iure delectus nemo voluptas
-        reiciendis!
-      </p>
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
