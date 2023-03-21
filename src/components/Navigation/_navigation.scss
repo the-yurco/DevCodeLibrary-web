@@ -1,0 +1,31 @@
+@import "/src/styles/abstracts/abstracts";
+
+body {
+  background-color: $bg;
+  nav {
+    height: 6rem;
+    .brand_link {
+      background-color: $primary;
+    }
+    .navbar_links {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        color: $white;
+      }
+    }
+    #signin {
+      background-color: transparent;
+      color: $primary;
+      border: 1px solid $primary;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+    #signin {
+      font-size: 1.1rem;
+    }
+  }
+}
