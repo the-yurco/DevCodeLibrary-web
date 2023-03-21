@@ -12,6 +12,8 @@ import Profile from "../../pages/profile/Profile";
 import Settings from "../../pages/settings/Settings";
 import Signin from "../../pages/sing-in/SingIn";
 import Singup from "../../pages/sing-up/SingUp";
+import Support from "../../pages/support/Support";
+import Contact from "../../pages/contact/Contact";
 
 const PagesData: routerType[] = [
   {
@@ -73,6 +75,16 @@ const PagesData: routerType[] = [
     path: "*",
     element: <Page404 />,
     title: "Page404"
+  },
+  {
+    path: "/support",
+    element: <Support />,
+    title: "Support"
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+    title: "Contact"
   }
 ];
 
