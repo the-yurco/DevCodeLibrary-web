@@ -1,7 +1,16 @@
+@import "/src/styles/abstracts/abstracts";
+
 * {
   box-sizing: border-box !important;
   margin: 0rem !important;
   padding: 0 !important;
   text-decoration: none !important;
   list-style: none !important;
+  color: $white;
+}
+
+body {
+  padding: 0 10rem !important;
+  nav {
+  }
 }
