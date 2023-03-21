@@ -1,0 +1,11 @@
+// @import "src/styles/variables/variables";
+
+body {
+  .home-hero {
+    span {
+      color: $primary;
+      border: 1px solid $primary;
+      @include border-radius(0.3rem);
+    }
+  }
+}
