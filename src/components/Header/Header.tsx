@@ -1,7 +1,13 @@
 import React from "react";
+import Navigation from "../Navigation/Navigation";
+import { BsSearch } from "react-icons/bs";
 
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 };
 
 export default Header;
