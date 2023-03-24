@@ -2,10 +2,20 @@
 
 body {
   .home-hero {
+    h1 {
+      font-size: clamp(0.8rem, 2.9rem, 3rem);
+    }
     span {
-      color: $primary;
-      border: 1px solid $primary;
+      color: $google;
+      border: 1px solid $google;
       @include border-radius(0.3rem);
+    }
+    .btn {
+      background-color: $google;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

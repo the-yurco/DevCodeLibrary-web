@@ -1,4 +1,4 @@
-@import "/src/styles/abstracts/abstracts";
+@import "../abstracts/abstracts";
 
 * {
   box-sizing: border-box !important;
@@ -10,7 +10,8 @@
 }
 
 body {
-  padding: 0 10rem !important;
-  nav {
-  }
+  padding: 0 8rem !important;
+  // height: 100vh !important;
+  // nav {
+  // }
 }

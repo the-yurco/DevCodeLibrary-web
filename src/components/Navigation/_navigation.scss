@@ -1,27 +1,34 @@
-@import "/src/styles/abstracts/abstracts";
+@import "../../styles/abstracts/abstracts";
 
 body {
   background-color: $bg;
   nav {
     height: 6rem;
     .brand_link {
-      background-color: $primary;
+      background-color: none;
+      border: 1px solid $white;
+      color: $white;
     }
     .navbar_links {
       display: flex;
       justify-content: space-evenly;
       a {
         color: $white;
+        transition: all 0.3s;
+        &:hover {
+          color: $google;
+        }
       }
     }
     #signin {
       background-color: transparent;
-      color: $primary;
-      border: 1px solid $primary;
+      color: $white;
+      border: 1px solid $white;
       transition: all 0.3s;
       &:hover {
-        background-color: $primary;
+        background-color: $google;
         color: $white;
+        border: 1px solid $google;
       }
     }
     #signin {

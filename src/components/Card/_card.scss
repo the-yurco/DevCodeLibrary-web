@@ -1,0 +1,11 @@
+@import "../../styles/abstracts/abstracts";
+
+body {
+  .card {
+    background: $google;
+    button {
+      background-color: $bg;
+      border: none;
+    }
+  }
+}

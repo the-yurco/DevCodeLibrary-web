@@ -8,12 +8,80 @@
   The smaller device rules always should write below the bigger device rules
   Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
   */
+body {
+  background-color: #04142e !important;
+}
+body nav {
+  height: 6rem;
+}
+body nav .brand_link {
+  background-color: #1e76ff !important;
+}
+body nav .navbar_links {
+  display: flex;
+  justify-content: space-evenly;
+}
+body nav .navbar_links a {
+  color: #fff !important;
+}
+body nav #signin {
+  background-color: transparent;
+  color: #1e76ff !important;
+  border: 1px solid #1e76ff !important;
+  transition: all 0.3s;
+}
+body nav #signin:hover {
+  background-color: #1e76ff !important;
+  color: #fff !important;
+}
+body nav #signin {
+  font-size: 1.1rem;
+}
+
+body .home-hero h1 {
+  font-size: 2.9rem;
+}
+body .home-hero span {
+  color: #1e76ff !important;
+  border: 1px solid #1e76ff !important;
+  border-radius: 0.3rem;
+}
+body .home-hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+  0 - 600: Phone
+  600 - 900: Tablet portrait
+  900 - 1200: Tablet landscape
+  1200 - 1800: Normal styles
+  1800+ : Big Desktop
+  1em = 16px
+  The smaller device rules always should write below the bigger device rules
+  Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+  */
+/*
+  0 - 600: Phone
+  600 - 900: Tablet portrait
+  900 - 1200: Tablet landscape
+  1200 - 1800: Normal styles
+  1800+ : Big Desktop
+  1em = 16px
+  The smaller device rules always should write below the bigger device rules
+  Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+  */
 * {
   box-sizing: border-box !important;
   margin: 0rem !important;
   padding: 0 !important;
   text-decoration: none !important;
   list-style: none !important;
+  color: #fff !important;
+}
+
+body {
+  padding: 0 8rem !important;
 }
 
 body {

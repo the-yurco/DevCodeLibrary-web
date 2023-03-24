@@ -12,7 +12,7 @@ const Navigation = () => {
         variant="dark"
         className="d-flex justify-content-between "
       >
-        <Navbar.Brand href="/" className="py-1 px-3 brand_link rounded-1">
+        <Navbar.Brand href="/" className="py-1 px-3 brand_link rounded-1 logo">
           DevCodeLibrary
         </Navbar.Brand>
         <Nav className="d-flex w-50 navbar_links">

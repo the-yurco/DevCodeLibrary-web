@@ -22,8 +22,8 @@ const Home = () => {
                   <h4>Discover Everything you need to know...</h4>
                 </div>
                 <a
-                  href="#"
-                  className="btn btn-primary py-2 mt-5 d-flex align-items-center justify-content-center w-25 gap-2"
+                  href=""
+                  className="btn py-2 mt-5 d-flex align-items-center justify-content-center w-25 gap-2"
                 >
                   <BsFillPlayFill /> Watch Trailer
                 </a>
