@@ -13,12 +13,21 @@ interface Props {
 const Card_layout = ({ imgUrl, name, description, link }: Props) => {
   return (
     <>
-      <Card style={{ width: "15rem" }} className="bg-danger p-2 rounded">
+      <Card
+        style={{ width: "15rem", maxHeight: "45rem" }}
+        className="bg-danger p-2 rounded"
+      >
         <Card.Img
           variant="top"
           src={imgUrl}
           className="rounded-top"
-          style={{ height: "15rem" }}
+          style={{
+            maxInlineSize: "100%",
+            blockSize: "auto",
+            width: "100%",
+            height: "50%",
+            objectFit: "cover"
+          }}
         />
         <Card.Body className="mx-2">
           <Card.Title className="my-3">{name}</Card.Title>
