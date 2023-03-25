@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Card_layout from "../../../components/Card/Card_layout";
 import CardGroup from "react-bootstrap/esm/CardGroup";
 
@@ -11,30 +9,30 @@ const LibraryMain = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
-              <CardGroup className="gap-3">
+              <CardGroup className="gap-5">
                 <Card_layout
                   imgUrl="/src/assets/images/junior-academy.jpg"
                   name="Junior Academy"
                   description="This is Junior Academy"
-                  link="/junior-academy"
+                  link="/library/junior-academy"
                 />
                 <Card_layout
                   imgUrl="/src/assets/images/senior-academy.jpg"
                   name="Senior Academy"
-                  description="This is Senior Academy"
-                  link="/senior-academy"
+                  description="This is a Senior Academy"
+                  link="/library/senior-academy"
                 />
                 <Card_layout
                   imgUrl="/src/assets/images/tips-tricks.jpg"
                   name="Tips & Tricks"
                   description="These are Tips & Tricks"
-                  link="/tips-and-tricks"
+                  link="/library/tips-tricks"
                 />
                 <Card_layout
                   imgUrl="/src/assets/images/challenges.jpg"
                   name="Challenges"
                   description="These are Challenges"
-                  link="/challenges"
+                  link="/library/test-challenges"
                 />
               </CardGroup>
             </div>
