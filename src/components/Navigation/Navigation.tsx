@@ -8,12 +8,12 @@ const Navigation = () => {
   return (
     <>
       <Navbar
-        bg="transparent"
+        style={{ background: "#4361ee" }}
         variant="dark"
-        className="d-flex justify-content-between "
+        className="d-flex justify-content-between rounded px-3 mt-3"
       >
-        <Navbar.Brand href="/" className="py-1 px-3 brand_link rounded-1 logo">
-          DevCodeLibrary
+        <Navbar.Brand href="/" className="py-1 px-3 brand_link rounded-1 logo ">
+          DevCodeLibrary <span className="rounded py-1 px-1">ALPHA</span>
         </Navbar.Brand>
         <Nav className="d-flex w-50 navbar_links">
           <Nav.Link href="/about" className="link">
