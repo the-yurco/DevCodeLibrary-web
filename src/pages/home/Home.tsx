@@ -30,15 +30,14 @@ const Home = () => {
               </div>
             </div>
             <div className="col-6">
-              <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center ">
-                <div className="small-banner">
-                  <img
-                    src="src/assets/images/2211.w026.n002.2759B.p1.2759.jpg"
-                    alt=""
-                    height={480}
-                    className="rounded"
-                  />
-                </div>
+              <div className="d-flex flex-wrap gap-10 justify-content-end align-items-end secondary-banner">
+                <img
+                  src="src/assets/images/home5.jpg"
+                  alt=""
+                  height={480}
+                  style={{ maxHeight: "480px" }}
+                  className="rounded float-end"
+                />
               </div>
             </div>
           </div>

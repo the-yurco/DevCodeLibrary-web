@@ -2,6 +2,27 @@
 
 body {
   .home-hero {
+    .main-banner,
+    .secondary-banner {
+      opacity: 0;
+      animation: drop-down 1s ease-in-out forwards;
+
+      .image-hidden {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 20rem;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .image-visible {
+        opacity: 1;
+        width: 20rem;
+        height: 20rem;
+      }
+    }
     h1 {
       font-size: clamp(0.8rem, 2.9rem, 3rem);
     }
@@ -16,6 +37,7 @@ body {
     img {
       max-width: 100%;
       height: auto;
+      border: 3px solid $google;
     }
   }
 }
