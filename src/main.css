@@ -8,47 +8,192 @@
   The smaller device rules always should write below the bigger device rules
   Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
   */
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+body .card {
+  background: #4361ee !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px, rgba(0, 0, 0, 0.3) 0px 10px 13px -4px, rgba(0, 0, 0, 0.2) 0px -7px 1px inset;
+  border: none;
+  opacity: 0;
+  animation: drop-down 1s ease-in-out forwards;
+}
+body .card img {
+  box-shadow: 0px 1px 1px 0px #00112c, 1px 1px 1px 0px #00112c, 1px 1px 5px 0px #00112c, 1px 1px 10px 0px #00112c;
+  image-rendering: smooth;
+}
+body .card .btn {
+  background-color: #161a1d !important;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: all 0.3s;
+}
+body .card .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*
+  0 - 600: Phone
+  600 - 900: Tablet portrait
+  900 - 1200: Tablet landscape
+  1200 - 1800: Normal styles
+  1800+ : Big Desktop
+  1em = 16px
+  The smaller device rules always should write below the bigger device rules
+  Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+  */
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 body {
-  background-color: #04142e !important;
+  background-color: #161a1d !important;
 }
-body nav {
-  height: 6rem;
+body .navbar {
+  height: 4rem;
 }
-body nav .brand_link {
-  background-color: #1e76ff !important;
+body .navbar .brand_link {
+  background-color: none;
+  border: 1px solid #161a1d !important;
+  color: #161a1d !important;
+  font-weight: 500;
 }
-body nav .navbar_links {
+body .navbar .brand_link span {
+  font-size: 0.7rem;
+  border: 1px solid #161a1d !important;
+  color: #161a1d !important;
+}
+body .navbar .navbar_links {
   display: flex;
   justify-content: space-evenly;
 }
-body nav .navbar_links a {
-  color: #fff !important;
-}
-body nav #signin {
-  background-color: transparent;
-  color: #1e76ff !important;
-  border: 1px solid #1e76ff !important;
+body .navbar .navbar_links a {
+  color: #161a1d !important;
   transition: all 0.3s;
 }
-body nav #signin:hover {
-  background-color: #1e76ff !important;
-  color: #fff !important;
+body .navbar .navbar_links a:hover {
+  color: #161a1d !important;
 }
-body nav #signin {
+body .navbar .navbar_links a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #161a1d !important;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  border-radius: 1rem;
+}
+body .navbar .navbar_links a:hover:after {
+  transform: scaleX(1);
+}
+body .navbar #signin {
+  background-color: transparent;
+  color: #161a1d !important;
+  border: 1px solid #161a1d !important;
+  transition: all 0.3s;
+}
+body .navbar #signin:hover {
+  background-color: #161a1d !important;
+  color: #fff !important;
+  border: 1px solid #161a1d !important;
+}
+body .navbar #signin {
   font-size: 1.1rem;
 }
 
+/*
+  0 - 600: Phone
+  600 - 900: Tablet portrait
+  900 - 1200: Tablet landscape
+  1200 - 1800: Normal styles
+  1800+ : Big Desktop
+  1em = 16px
+  The smaller device rules always should write below the bigger device rules
+  Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+  */
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+body .tips-card {
+  background: #161a1d !important;
+  border: 2px solid #4361ee !important;
+}
+body .l2-header {
+  color: #4361ee !important;
+  background-color: #161a1d !important;
+}
+body .btn_tips {
+  background-color: #4361ee !important;
+}
+body .footer_card_tips {
+  background-color: transparent;
+  color: #4361ee !important;
+}
+
+body .home-hero .main-banner,
+body .home-hero .secondary-banner {
+  opacity: 0;
+  animation: drop-down 1s ease-in-out forwards;
+}
+body .home-hero .main-banner .image-hidden,
+body .home-hero .secondary-banner .image-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+body .home-hero .main-banner .image-visible,
+body .home-hero .secondary-banner .image-visible {
+  opacity: 1;
+  width: 20rem;
+  height: 20rem;
+}
 body .home-hero h1 {
   font-size: 2.9rem;
 }
 body .home-hero span {
-  color: #1e76ff !important;
-  border: 1px solid #1e76ff !important;
+  color: #4361ee !important;
+  border: 1px solid #4361ee !important;
   border-radius: 0.3rem;
+}
+body .home-hero .btn {
+  background-color: #4361ee !important;
 }
 body .home-hero img {
   max-width: 100%;
   height: auto;
+  border: 3px solid #4361ee !important;
+}
+
+body .tips-tricks-card .card-title {
+  color: #161a1d !important !important;
+}
+
+body img {
+  height: 100%;
 }
 
 /*
@@ -61,6 +206,16 @@ body .home-hero img {
   The smaller device rules always should write below the bigger device rules
   Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
   */
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 /*
   0 - 600: Phone
   600 - 900: Tablet portrait
@@ -71,6 +226,16 @@ body .home-hero img {
   The smaller device rules always should write below the bigger device rules
   Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
   */
+@keyframes drop-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 * {
   box-sizing: border-box !important;
   margin: 0rem !important;
