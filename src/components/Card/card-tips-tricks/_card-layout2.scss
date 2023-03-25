@@ -1,11 +1,20 @@
 @import "../../../styles/abstracts/abstracts";
 
 body {
-  .card-header {
-    // color: "green " !important;
-    // height: 10rem !important;
+  .tips-card {
+    background: $bg;
+    border: 2px solid $google;
+  }
+  .l2-header {
+    // font-size: 3rem;
+    color: $google;
+    background-color: $bg;
+  }
+  .btn_tips {
+    background-color: $google;
   }
   .footer_card_tips {
-    background-color: $bg !important;
+    background-color: transparent;
+    color: $google;
   }
 }
