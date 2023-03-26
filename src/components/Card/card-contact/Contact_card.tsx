@@ -1,6 +1,5 @@
-import React, { ReactElement, useState } from "react";
-import { Card, Button, Container } from "react-bootstrap";
-import { BsDiscord } from "react-icons/bs";
+import { ReactElement } from "react";
+import { Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -10,7 +9,7 @@ interface Props {
   react_icon_ly3: ReactElement;
 }
 
-const Card_Layout3 = ({
+const Contact_card = ({
   card_description_ly3,
   card_title_ly3,
   link_ly3,
@@ -21,7 +20,7 @@ const Card_Layout3 = ({
       <Link to={link_ly3}>
         <Card
           style={{ width: "18rem" }}
-          className="mb-2 rounded p-3 text-center"
+          className="mb-2 rounded p-3 py-5 text-center h-100"
         >
           <Container>{react_icon_ly3}</Container>
           <Card.Body>
@@ -34,4 +33,4 @@ const Card_Layout3 = ({
   );
 };
 
-export default Card_Layout3;
+export default Contact_card;

@@ -10,7 +10,7 @@ interface Props {
   link: string;
 }
 
-const Card_Layout2 = ({
+const TipsTricks_card = ({
   card_header,
   card_description,
   card_footer,
@@ -27,10 +27,10 @@ const Card_Layout2 = ({
           {card_header}
         </Card.Header>
         <Card.Body className="my-3 text-start px-4">
-          <Card.Title className="title_tips">{card_title}</Card.Title>
+          <Card.Title className="title_tips mb-3">{card_title}</Card.Title>
           <Card.Text>{card_description}</Card.Text>
           <Link to={link}>
-            <Button className="btn_tips py-1 px-3 mt-3">View</Button>
+            <Button className="btn_tips py-1 px-4 mt-3">View</Button>
           </Link>
         </Card.Body>
         <Card.Footer className="footer_card_tips rounded m-1 py-1">
@@ -41,4 +41,4 @@ const Card_Layout2 = ({
   );
 };
 
-export default Card_Layout2;
+export default TipsTricks_card;

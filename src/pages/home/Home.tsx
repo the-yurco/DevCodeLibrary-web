@@ -5,7 +5,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 const Home = () => {
   return (
     <>
-      <section className="home-hero py-5 mt-5">
+      <section className="home-hero py-5 mt-3">
         <div className="container-fluid">
           <div className="row py-5">
             <div className="col-6 pe-4">
@@ -23,7 +23,7 @@ const Home = () => {
                 </div>
                 <a
                   href=""
-                  className="btn py-2 mt-5 d-flex align-items-center justify-content-center w-25 gap-2"
+                  className="btn py-2 mt-5 d-flex align-items-center justify-content-center w-25 w-lg-50 gap-2"
                 >
                   <BsFillPlayFill /> Watch Trailer
                 </a>

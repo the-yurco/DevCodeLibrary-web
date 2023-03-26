@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import SingIn from "../../pages/sing-in/SingIn";
 
 const Navigation = () => {
   return (
@@ -12,8 +10,8 @@ const Navigation = () => {
         variant="dark"
         className="d-flex justify-content-between rounded px-3 mt-3"
       >
-        <Navbar.Brand href="/" className="py-1 px-3 brand_link rounded-1 logo ">
-          DevCodeLibrary <span className="rounded py-1 px-1">ALPHA</span>
+        <Navbar.Brand href="/" className="py-1 px-1 brand_link rounded-1 logo ">
+          DevCodeLibrary <span className="rounded-1 py-1 px-1">ALPHA</span>
         </Navbar.Brand>
         <Nav className="d-flex w-50 navbar_links">
           <Nav.Link href="/about" className="link">
@@ -22,7 +20,7 @@ const Navigation = () => {
           <Nav.Link href="/library" className="link">
             Library
           </Nav.Link>
-          <Nav.Link href="/support" className="link">
+          <Nav.Link href="/error" className="link">
             Support us
           </Nav.Link>
           <Nav.Link href="/contact" className="link">
@@ -33,7 +31,7 @@ const Navigation = () => {
           <Navbar.Brand
             href="/signin"
             id="signin"
-            className="py-1 px-4 rounded-1"
+            className="py-1 px-5 rounded-1"
           >
             Sign In
           </Navbar.Brand>

@@ -5,7 +5,7 @@ const About = () => {
     <>
       <h2 className="mt-5"> March 21 [ DevCodeLibrary ]</h2>
       <br />
-      <h6 className="text-center">
+      {/* <h6 className="text-center">
         I had this project in my mind for a long time, but only this day I
         started programming this project. The reason why I didn't start sooner
         was because of schoolwork, project preparation, other unfinished
@@ -27,8 +27,7 @@ const About = () => {
         video being on our site you should contact us. The project is still in
         the process of rebuilding so don't be surprised if there will be less
         problems with the connection to the site. Translated with
-        www.DeepL.com/Translator (free version)
-      </h6>
+      </h6> */}
     </>
   );
 };

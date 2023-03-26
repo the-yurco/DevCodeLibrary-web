@@ -1,7 +1,6 @@
-import React from "react";
 import { Container, Row, Col, CardGroup } from "react-bootstrap";
-import Card_Layout3 from "../../components/Card/card-contact/Card_Layout3";
-import { BsDiscord, BsTwitter } from "react-icons/bs";
+import { BsDiscord, BsMailbox, BsTwitter, BsYoutube } from "react-icons/bs";
+import Contact_card from "../../components/Card/card-contact/Contact_card";
 
 const Contact = () => {
   return (
@@ -11,35 +10,35 @@ const Contact = () => {
           <CardGroup className="py-3 gap-3 g-row-3 d-flex justify-content-center">
             <Row className="gap-3">
               <Col>
-                <Card_Layout3
-                  link_ly3="asdasd"
+                <Contact_card
+                  link_ly3="https://discord.com/"
                   react_icon_ly3={<BsDiscord size="10rem" />}
                   card_title_ly3="Discord"
                   card_description_ly3="Help us improve our destiny"
                 />
               </Col>
               <Col>
-                <Card_Layout3
-                  link_ly3="Tip {React}"
+                <Contact_card
+                  link_ly3="https://twitter.com/"
                   react_icon_ly3={<BsTwitter size="10rem" />}
                   card_title_ly3="Twitter"
                   card_description_ly3="Updates & Realises"
                 />
               </Col>
               <Col>
-                <Card_Layout3
-                  link_ly3="Tip {React}"
-                  react_icon_ly3={<BsTwitter size="10rem" />}
-                  card_title_ly3="Twitter"
-                  card_description_ly3="Updates & Realises"
+                <Contact_card
+                  link_ly3="https://youtube.com/"
+                  react_icon_ly3={<BsYoutube size="10rem" />}
+                  card_title_ly3="Youtube"
+                  card_description_ly3="Trailers & Tutorials"
                 />
               </Col>
               <Col>
-                <Card_Layout3
-                  link_ly3="Tip {React}"
-                  react_icon_ly3={<BsTwitter size="10rem" />}
-                  card_title_ly3="Twitter"
-                  card_description_ly3="Updates & Realises"
+                <Contact_card
+                  link_ly3="https://gmail.com/"
+                  react_icon_ly3={<BsMailbox size="10rem" />}
+                  card_title_ly3="Mail"
+                  card_description_ly3="Report Bugs"
                 />
               </Col>
             </Row>
