@@ -1,6 +1,6 @@
 import React from "react";
 import { routerType } from "../types/router.types";
-import Page404 from "../../pages/404Page/Page404";
+import Page404 from "../../pages/404Page/error";
 import About from "../../pages/about/About";
 import Home from "../../pages/home/Home";
 import LibraryMain from "../../pages/library/library/LibraryMain";
@@ -74,7 +74,7 @@ const PagesData: routerType[] = [
   {
     path: "*",
     element: <Page404 />,
-    title: "Page404"
+    title: "error"
   },
   {
     path: "/support",

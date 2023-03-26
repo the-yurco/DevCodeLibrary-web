@@ -1,3 +1,28 @@
+//! MAIN BTNS
+@mixin main-btn {
+  background-color: $google;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: all 0.3s;
+}
+
+@mixin main-btn-hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+//! CARD / IMG BOX-SHADOW
+@mixin card-box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px,
+    rgba(0, 0, 0, 0.3) 0px 10px 13px -4px,
+    rgba(0, 0, 0, 0.2) 0px -10px 1px inset;
+}
+
+@mixin img-box-shadow {
+  box-shadow: 0px 1px 1px 0px #182044, 1px 1px 1px 0px #182044,
+    1px 1px 5px 0px #182044, 1px 1px 10px 0px #182044;
+}
+
 //! LINEAR GRADIENT
 @mixin linear-gradient-main {
   background-image: linear-gradient(to left, $secondary, $primary);

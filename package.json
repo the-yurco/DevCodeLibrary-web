@@ -14,7 +14,8 @@
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.9.0"
+    "react-router-dom": "^6.9.0",
+    "reactstrap": "^9.1.6"
   },
   "devDependencies": {
     "@7urtle/lambda": "^1.4.1",
