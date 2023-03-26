@@ -2,29 +2,58 @@
 
 body {
   .card {
-    background: $google;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px,
-      rgba(0, 0, 0, 0.3) 0px 10px 13px -4px,
-      rgba(0, 0, 0, 0.2) 0px -7px 1px inset;
-    border: none;
-
+    @include card-box-shadow;
+    @include border(1px, $google);
+    height: 90%;
+    background: $secondary;
     opacity: 0;
     animation: drop-down 1s ease-in-out forwards;
-
     img {
-      box-shadow: 0px 1px 1px 0px #00112c, 1px 1px 1px 0px #00112c,
-        1px 1px 5px 0px #00112c, 1px 1px 10px 0px #00112c;
-      image-rendering: smooth;
+      @include img-box-shadow;
     }
-    .btn {
-      background-color: $bg;
-      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-      border: none;
-      transition: all 0.3s;
-      &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    .card-body {
+      .container {
+        .card-title {
+          // color: $white;
+        }
+        .card-text {
+          // color: $white;
+        }
       }
+      .container {
+        a {
+          .btn {
+            @include main-btn;
+            &:hover {
+              @include main-btn-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tips-card {
+    .l2-header {
+      color: $google;
+    }
+    .card-body {
+      .card-title {
+        // color: $white;
+      }
+      p {
+        // color: $white;
+      }
+      a {
+        .btn {
+          @include main-btn;
+          &:hover {
+            @include main-btn-hover;
+          }
+        }
+      }
+    }
+    .footer_card_tips {
+      color: $google;
     }
   }
 }

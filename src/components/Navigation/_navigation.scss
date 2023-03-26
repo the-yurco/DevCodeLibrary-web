@@ -1,19 +1,20 @@
 @import "../../styles/abstracts/abstracts";
 
 body {
-  background-color: $bg;
   .navbar {
     height: 4rem;
-    // background: $google !important;
     .brand_link {
-      background-color: none;
-      border: 1px solid $bg;
+      @include border(1px, $bg);
       color: $bg;
       font-weight: 500;
+      gap: 0.3rem;
+      @include flex-center-vert;
+      @include flex-center-horiz;
       span {
         font-size: 0.7rem;
-        border: 1px solid $bg;
+        @include border(1px, $bg);
         color: $bg;
+        height: fit-content;
       }
     }
     .navbar_links {
@@ -22,13 +23,10 @@ body {
       a {
         color: $bg;
         transition: all 0.3s;
-        &:hover {
-          color: $bg;
-        }
         &:after {
           display: block;
           content: "";
-          border-bottom: solid 3px $bg;
+          @include border-b(3px, $bg);
           transform: scaleX(0);
           transition: transform 0.2s ease-in-out;
           border-radius: 1rem;
@@ -41,12 +39,12 @@ body {
     #signin {
       background-color: transparent;
       color: $bg;
-      border: 1px solid $bg;
+      @include border(1px, $bg);
       transition: all 0.3s;
       &:hover {
         background-color: $bg;
         color: $white;
-        border: 1px solid $bg;
+        @include border(1px, $bg);
       }
     }
     #signin {
