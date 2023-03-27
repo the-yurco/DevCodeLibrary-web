@@ -14,7 +14,7 @@ const TestChallenges = () => {
                 imgUrl="/src/assets/images/quiz.jpg"
                 name="Quizes"
                 description="These are Quizes"
-                link="/junior-academy/quizes"
+                link="/library/junior-academy/quizes"
               />
             </Col>
             <Col>
@@ -22,7 +22,7 @@ const TestChallenges = () => {
                 imgUrl="/src/assets/images/problem.jpg"
                 name="Problems"
                 description="These are Problems"
-                link="/senior-academy/problems"
+                link="/library/senior-academy/problems"
               />
             </Col>
             <Col>
@@ -30,7 +30,7 @@ const TestChallenges = () => {
                 imgUrl="/src/assets/images/projects.jpg"
                 name="Projects"
                 description="These are Projects"
-                link="/tips-tricks/projects"
+                link="/library/tips-tricks/projects"
               />
             </Col>
             <Col>
@@ -38,7 +38,7 @@ const TestChallenges = () => {
                 imgUrl="/src/assets/images/challenges2.jpg"
                 name="Challenges"
                 description="These are Challenges"
-                link="/test-challenges/challenges"
+                link="/library/test-challenges/challenges"
               />
             </Col>
           </Row>

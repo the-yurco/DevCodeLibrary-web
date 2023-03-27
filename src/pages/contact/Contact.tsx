@@ -22,7 +22,7 @@ const Contact = () => {
                   link_ly3="https://twitter.com/"
                   react_icon_ly3={<BsTwitter size="10rem" />}
                   card_title_ly3="Twitter"
-                  card_description_ly3="Updates & Realises"
+                  card_description_ly3="Updates & Releases"
                 />
               </Col>
               <Col>

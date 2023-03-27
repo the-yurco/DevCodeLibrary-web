@@ -14,7 +14,7 @@ const Academy = () => {
                 imgUrl="/src/assets/images/starter-field.jpg"
                 name="Starter Field"
                 description="This is a Starter Field"
-                link="/senior-academy/starter-field"
+                link="/library/senior-academy/starter-field"
               />
             </Col>
             <Col>
@@ -22,7 +22,7 @@ const Academy = () => {
                 imgUrl="/src/assets/images/intermediate-field.jpg"
                 name="Intermediate Field"
                 description="This is an Intermediate Field"
-                link="/senior-academy/intermediate-field"
+                link="/library/senior-academy/intermediate-field"
               />
             </Col>
             <Col>
@@ -30,7 +30,7 @@ const Academy = () => {
                 imgUrl="/src/assets/images/advanced-field.jpg"
                 name="Advanced Field"
                 description="This is an Advanced Field"
-                link="/senior-academy/advanced-field"
+                link="/library/senior-academy/advanced-field"
               />
             </Col>
           </Row>

@@ -14,7 +14,7 @@ const Academy = () => {
                 imgUrl="/src/assets/images/kids-field.jpg"
                 name="Kids Field"
                 description="This is Kids Field "
-                link="/junior-academy/kids-field"
+                link="/library/junior-academy/kids-field"
               />
             </Col>
             <Col>
@@ -22,7 +22,7 @@ const Academy = () => {
                 imgUrl="/src/assets/images/student-field.jpg"
                 name="Student Field"
                 description="This is Student Field"
-                link="/junior-academy/student-field"
+                link="/library/junior-academy/student-field"
               />
             </Col>
           </Row>

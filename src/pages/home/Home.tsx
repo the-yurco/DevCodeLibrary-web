@@ -11,7 +11,7 @@ const Home = () => {
             <div className="col-6 pe-4">
               <div className="main-banner mt-3">
                 <div>
-                  <h1>Learn Fast and Effectivelly</h1>
+                  <h1>Learn Fast and Effectively</h1>
                   <br />
                   <h1>
                     We are library of everything you need for coding{" "}
