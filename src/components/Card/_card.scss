@@ -1,61 +1,61 @@
-@import "../../styles/abstracts/abstracts";
+@import '../../styles/abstracts/abstracts';
 
 body {
-  .col {
-    // width: 24.375867%;
-  }
-  .card {
-    @include card-box-shadow;
-    @include border(1px, $google);
-    // height: 90%;
-    width: 100%;
-    background: $secondary;
-    opacity: 0;
-    animation: drop-down 1s ease-in-out forwards;
-    img {
-      @include img-box-shadow;
-    }
-    .card-body {
-      .container {
-        .card-title {
-          // color: $white;
-        }
-        .card-text {
-          // color: $white;
-        }
-      }
-      .container {
-        a {
-          @include main-btn;
-          &:hover {
-            @include main-btn-hover;
-          }
-        }
-      }
-    }
-  }
-  .tips-card {
-    .l2-header {
-      color: $google;
-    }
-    .card-body {
-      .card-title {
-        // color: $white;
-      }
-      p {
-        // color: $white;
-      }
-      a {
-        .btn {
-          @include main-btn;
-          &:hover {
-            @include main-btn-hover;
-          }
-        }
-      }
-    }
-    .footer_card_tips {
-      color: $google;
-    }
-  }
+	.col {
+		// width: 24.375867%;
+	}
+	.card {
+		@include card-box-shadow;
+		@include border(1px, $google);
+		// height: 90%;
+		width: 100%;
+		// background: $secondary;
+		opacity: 0;
+		animation: drop-down 1s ease-in-out forwards;
+		img {
+			@include img-box-shadow;
+		}
+		.card-body {
+			.container {
+				.card-title {
+					// color: $white;
+				}
+				.card-text {
+					// color: $white;
+				}
+			}
+			.container {
+				a {
+					@include main-btn;
+					&:hover {
+						@include main-btn-hover;
+					}
+				}
+			}
+		}
+	}
+	.tips-card {
+		.l2-header {
+			color: $google;
+		}
+		.card-body {
+			.card-title {
+				// color: $white;
+			}
+			p {
+				// color: $white;
+			}
+			a {
+				.btn {
+					@include main-btn;
+					&:hover {
+						@include main-btn-hover;
+					}
+				}
+			}
+		}
+		.footer_card_tips {
+			color: $google;
+		}
+	}
 }

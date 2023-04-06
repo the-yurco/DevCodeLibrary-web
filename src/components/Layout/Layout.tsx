@@ -7,11 +7,9 @@ import { Container } from 'react-bootstrap';
 const Layout = () => {
 	return (
 		<>
-			<Container fluid>
-				<Header />
-				<Outlet />
-				{/* <Footer /> */}
-			</Container>
+			<Header />
+			<Outlet />
+			{/* <Footer /> */}
 		</>
 	);
 };

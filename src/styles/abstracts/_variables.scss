@@ -1,19 +1,23 @@
-// Color Variables
-$primary: #1e76ff !important !default;
-$secondary: #171c27 !important !default;
-$bg: #e6ddc4 !important !default;
-$dark-bg: rgb(10, 16, 22) !important !default;
-$light: #fbfbfb !important !default;
-$dark: #4a4a4a !important !default;
+//! Colors
+$main-bg: #f4debe;
+$secondary: #4d675a;
+$txt: #dbedf3;
+$shit: #404b69;
 
-///////////////
-// Solid Color
-///////////////
-$white: #fff !important;
-$black: #000 !important;
-$charade: #23252f !important;
-$muted: #8898aa !important;
-$l-muted: #c2cbd4 !important;
+//! Typography:
+$mainFontFamily: 'Roboto', sans-serif;
+
+$baseFontSize: 1rem;
+$baseLineHeight: 1.3rem;
+
+$h1fontSize: $baseFontSize * 3.3;
+$h3fontSize: $baseFontSize * 2.5;
+$h5fontSize: $baseFontSize * 1.4;
+$h6fontSize: $baseFontSize * 1.3;
+$pfontSize: $baseFontSize * 1.2;
+$fontSizeLarge: $baseFontSize * 1.4;
+$fontSizeSmall: $baseFontSize * 0.95;
+$fontSizeMini: $baseFontSize * 0.85;
 
 /////////////
 // Social
@@ -26,3 +30,6 @@ $google: #4361ee !important;
 $google2: #4362ee70 !important;
 $reddit: #ff4500 !important;
 $spotify: #1ed760 !important;
+
+//Typography
+$font-family: 'Geo', sans-serif;

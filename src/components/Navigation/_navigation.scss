@@ -1,54 +1,28 @@
-@import "../../styles/abstracts/abstracts";
+@import '../../styles/abstracts/abstracts';
 
 body {
-  .navbar {
-    height: 4rem;
-    .brand_link {
-      @include border(1px, $bg);
-      color: $bg;
-      font-weight: 500;
-      gap: 0.3rem;
-      @include flex-center-vert;
-      @include flex-center-horiz;
-      span {
-        font-size: 0.7rem;
-        @include border(1px, $bg);
-        color: $bg;
-        height: fit-content;
-      }
-    }
-    .navbar_links {
-      display: flex;
-      justify-content: space-evenly;
-      a {
-        color: $bg;
-        transition: all 0.3s;
-        &:after {
-          display: block;
-          content: "";
-          @include border-b(3px, $bg);
-          transform: scaleX(0);
-          transition: transform 0.2s ease-in-out;
-          border-radius: 1rem;
-        }
-        &:hover:after {
-          transform: scaleX(1);
-        }
-      }
-    }
-    #signin {
-      background-color: transparent;
-      color: $bg;
-      @include border(1px, $bg);
-      transition: all 0.3s;
-      &:hover {
-        background-color: $bg;
-        color: $white;
-        @include border(1px, $bg);
-      }
-    }
-    #signin {
-      font-size: 1.1rem;
-    }
-  }
+	.navbar {
+		height: 3rem;
+		background-color: $secondary;
+		border: 1px solid $txt;
+		// font-size: 3rem;
+		// color: #ff6768;
+
+		.container {
+			// border: 1px solid #ff6768;
+			display: flex;
+			align-items: center;
+
+			.navbar-brand {
+				font-size: 2rem;
+				color: $txt;
+			}
+
+			.navbar-nav {
+				.nav-link {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
 }
