@@ -1,15 +1,23 @@
-@import "../abstracts/abstracts";
+@import '../abstracts/abstracts';
 
 * {
-  box-sizing: border-box !important;
-  margin: 0rem !important;
-  padding: 0 !important;
-  text-decoration: none !important;
-  list-style: none !important;
-  color: $white;
+	box-sizing: border-box !important;
+	margin: 0rem !important;
+	padding: 0 !important;
+	text-decoration: none !important;
+	list-style: none !important;
+	color: $white;
 }
 
 body {
-  padding: 0 10rem !important;
-  background-color: $bg;
+	// padding: 0 6.25rem !important;
+	background-color: $bg;
+	// .container,
+	// .container-fluid {
+	//   padding: 0 6.25rem !important;
+	// }
+}
+
+.container {
+	max-width: 1620px;
 }

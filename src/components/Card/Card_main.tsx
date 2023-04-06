@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 
 interface Props {
   imgUrl: string;
@@ -20,7 +20,7 @@ const Card_main = ({ imgUrl, name, description, link }: Props) => {
 
   return (
     <>
-      <Card className=" p-3 rounded-3 w-100">
+      <Card className="p-3 rounded-3 w-100">
         <Card.Img
           variant="top"
           src={imgUrl}
@@ -29,10 +29,8 @@ const Card_main = ({ imgUrl, name, description, link }: Props) => {
           }`}
           onLoad={hadleImageLoaded}
           style={{
-            maxInlineSize: "100%",
-            blockSize: "auto",
-            width: "100%",
-            height: "60%",
+            maxWidth: "100%",
+            height: "auto",
             objectFit: "cover",
             position: "relative",
             overflow: "hidden"
@@ -44,9 +42,9 @@ const Card_main = ({ imgUrl, name, description, link }: Props) => {
             <Card.Text className="mb-3">{description}</Card.Text>
           </Container>
           <Container>
-            <Link to={link}>
-              <Button className="py-2 px-3 mb-2">Enter Library</Button>
-            </Link>
+            <Button href={link} className="py-2 px-3 mb-2">
+              Enter Library
+            </Button>
           </Container>
         </Card.Body>
       </Card>

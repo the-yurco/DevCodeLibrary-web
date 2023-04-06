@@ -21,7 +21,7 @@
 body .card {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px, rgba(0, 0, 0, 0.3) 0px 10px 13px -4px, rgba(0, 0, 0, 0.2) 0px -10px 1px inset;
   border: 1px solid #4361ee !important;
-  height: 90%;
+  width: 100%;
   background: #171c27 !important;
   opacity: 0;
   animation: drop-down 1s ease-in-out forwards;
@@ -29,13 +29,13 @@ body .card {
 body .card img {
   box-shadow: 0px 1px 1px 0px #182044, 1px 1px 1px 0px #182044, 1px 1px 5px 0px #182044, 1px 1px 10px 0px #182044;
 }
-body .card .card-body .container a .btn {
+body .card .card-body .container a {
   background-color: #4361ee !important;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
   transition: all 0.3s;
 }
-body .card .card-body .container a .btn:hover {
+body .card .card-body .container a:hover {
   transform: translateY(-3px);
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -93,7 +93,6 @@ body .navbar .brand_link span {
   font-size: 0.7rem;
   border: 1px solid #161a1d !important;
   color: #161a1d !important;
-  height: -moz-fit-content;
   height: fit-content;
 }
 body .navbar .navbar_links {
@@ -130,6 +129,21 @@ body .navbar #signin {
   font-size: 1.1rem;
 }
 
+body .home-hero .slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 25%;
+  top: 45%;
+  width: 450px;
+  height: 450px;
+  background-image: linear-gradient(45deg, #4361ee 25%, transparent 25%, transparent 50%, #4361ee 50%, #6679cf 75%, transparent 75%, transparent);
+  border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
 body .home-hero .row .main-banner,
 body .home-hero .row .secondary-banner {
   opacity: 0;
@@ -157,6 +171,9 @@ body .home-hero .row h1 {
 body .home-hero .row span {
   color: #4361ee !important;
   border: 1px solid #4361ee !important;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
   border-radius: 0.3rem;
 }
 body .home-hero .row .btn {
@@ -164,6 +181,10 @@ body .home-hero .row .btn {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
   transition: all 0.3s;
+}
+body .home-hero .row .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 body .home-hero .row img {
   max-width: 100%;
@@ -180,6 +201,23 @@ body .home-hero .row img {
   }
   .main-banner .btn {
     font-size: 0.7em;
+  }
+}
+@keyframes sliderShape {
+  0%, 100% {
+    border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54%/30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
   }
 }
 .container-fluid {
@@ -233,6 +271,10 @@ body .home-hero .row img {
     text-shadow: 0 0 black;
   }
 }
+.kids-field .card {
+  height: 100%;
+}
+
 /*
   0 - 600: Phone
   600 - 900: Tablet portrait
@@ -283,10 +325,13 @@ body .home-hero .row img {
 }
 
 body {
-  padding: 0 10rem !important;
   background-color: #161a1d !important;
+}
+
+.container {
+  max-width: 1620px;
 }
 
 body {
   background: red;
-}
+}/*# sourceMappingURL=main.css.map */

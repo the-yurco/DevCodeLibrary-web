@@ -1,10 +1,14 @@
 @import "../../styles/abstracts/abstracts";
 
 body {
+  .col {
+    // width: 24.375867%;
+  }
   .card {
     @include card-box-shadow;
     @include border(1px, $google);
-    height: 90%;
+    // height: 90%;
+    width: 100%;
     background: $secondary;
     opacity: 0;
     animation: drop-down 1s ease-in-out forwards;
@@ -22,11 +26,9 @@ body {
       }
       .container {
         a {
-          .btn {
-            @include main-btn;
-            &:hover {
-              @include main-btn-hover;
-            }
+          @include main-btn;
+          &:hover {
+            @include main-btn-hover;
           }
         }
       }
