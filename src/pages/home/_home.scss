@@ -1,101 +1,103 @@
 // @import "src/styles/variables/variables";
 
 body {
-  .home-hero {
-    .slider-thumb::before {
-        position: absolute;
-        content: "";
-        left: 25%;
-        top: 45%;
-        width: 450px;
-        height: 450px;
-        background-image: linear-gradient(45deg, #4361ee 25%, transparent 25%, transparent 50%, #4361ee 50%, #6679cf 75%, transparent 75%, transparent);
-        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-        will-change: border-radius, transform, opacity;
-        animation: sliderShape 5s linear infinite;
-        display: block;
-        z-index: -1;
-        -webkit-animation: sliderShape 5s linear infinite;
-      }
-    .row {
-      .main-banner,
-      .secondary-banner {
-        opacity: 0;
-        animation: drop-down 1s ease-in-out forwards;
+	.home-wrapper {
+		.row {
+			.main-banner,
+			.secondary-banner,
+			.third-banner {
+				opacity: 0;
+				animation: drop-down 1s ease-in-out forwards;
+				border: 1px solid black;
 
-        .image-hidden {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 20rem;
-          height: 20rem;
-          opacity: 0;
-          transition: opacity 0.3s ease-in-out;
-        }
+				.image-hidden {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 20rem;
+					height: 20rem;
+					opacity: 0;
+					transition: opacity 0.3s ease-in-out;
+				}
 
-        .image-visible {
-          opacity: 1;
-          width: 20rem;
-          height: 20rem;
-        }
-      }
-      h1 {
-        font-size: clamp(0.3em, 2.4em, 2.4em);
-        // font-size: calc(35px + 0.390625vw);
-      }
-      span {
-        color: $google;
-        border: 1px solid $google;
-        @include border-radius(0.3rem);
-      }
-      .btn {
-        @include main-btn;
-        &:hover {
-          @include main-btn-hover;
-        }
-      }
-      img {
-        max-width: 100%;
-        height: auto;
-        @include border(3px, $google);
-      }
-    }
-  }
+				.image-visible {
+					opacity: 1;
+					width: 20rem;
+					height: 20rem;
+				}
+			}
+
+			.main-banner {
+				// color: $txt;
+				margin: 4rem 0 0 0;
+				height: 20rem;
+				background-color: #19a7ce;
+				box-shadow: 6px 6px black;
+			}
+			.secondary-banner {
+				background-color: #898121;
+				box-shadow: 6px 6px black;
+			}
+			h1 {
+				font-size: clamp(0.3em, 2.4em, 2.4em);
+				// font-size: calc(35px + 0.390625vw);
+			}
+			p {
+				font-size: $h5fontSize;
+				line-height: 2rem;
+			}
+			span {
+				// color: ;
+
+				border: 1px solid $secondary;
+			}
+			.btn {
+				@include main-btn;
+				&:hover {
+					@include main-btn-hover;
+				}
+			}
+			img {
+				max-width: 100%;
+				// height: ;
+				// @include border(3px, $google);
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 1430px) {
-  .main-banner {
-    h1 {
-      font-size: 2rem !important;
-    }
-    h4 {
-      font-size: 1rem !important;
-    }
-    .btn {
-      font-size: 0.7em;
-    }
-  }
-}
+// @media screen and (max-width: 1430px) {
+// 	.main-banner {
+// 		h1 {
+// 			font-size: 2rem !important;
+// 		}
+// 		h4 {
+// 			font-size: 1rem !important;
+// 		}
+// 		.btn {
+// 			font-size: 0.7em;
+// 		}
+// 	}
+// }
 
 @keyframes sliderShape {
+	0%,
+	100% {
+		border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+		transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+	}
 
-  0%,
-  100% {
-    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-  }
+	34% {
+		border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+		transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+	}
 
-  34% {
-    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
-  }
+	50% {
+		transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+	}
 
-  50% {
-    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-  }
-
-  67% {
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
-  }
+	67% {
+		border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+		transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+	}
 }

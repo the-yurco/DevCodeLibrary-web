@@ -1,133 +1,136 @@
 //! MAIN BTNS
 @mixin main-btn {
-  background-color: $google;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  border: none;
-  transition: all 0.3s;
+	background-color: $secondary;
+	color: $txt;
+	font-size: $pfontSize;
+	box-shadow: 3px 3px black;
+	border: 1px solid black;
+	transition: all 0.3s;
+	width: 8rem;
 }
 
 @mixin main-btn-hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+	transform: translateY(-3px);
+	// box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 //! CARD / IMG BOX-SHADOW
 @mixin card-box-shadow {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px,
-    rgba(0, 0, 0, 0.3) 0px 10px 13px -4px,
-    rgba(0, 0, 0, 0.2) 0px -10px 1px inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px,
+		rgba(0, 0, 0, 0.3) 0px 10px 13px -4px,
+		rgba(0, 0, 0, 0.2) 0px -10px 1px inset;
 }
 
 @mixin img-box-shadow {
-  box-shadow: 0px 1px 1px 0px #182044, 1px 1px 1px 0px #182044,
-    1px 1px 5px 0px #182044, 1px 1px 10px 0px #182044;
+	box-shadow: 0px 1px 1px 0px #182044, 1px 1px 1px 0px #182044,
+		1px 1px 5px 0px #182044, 1px 1px 10px 0px #182044;
 }
 
 //! LINEAR GRADIENT
 @mixin linear-gradient-main {
-  background-image: linear-gradient(to left, $secondary, $primary);
+	background-image: linear-gradient(to left, $secondary, $primary);
 }
 //! ---------------------------
 
 //! BORDER RADIUS
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
 }
 //! ---------------------------
 
 @mixin transition {
-  transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 //! BORDER
 @mixin border($size, $color) {
-  border: $size solid $color;
+	border: $size solid $color;
 }
 
 @mixin border-b($size, $color) {
-  border-bottom: $size solid $color;
+	border-bottom: $size solid $color;
 }
 
 @mixin border-t($size, $color) {
-  border-top: $size solid $color;
+	border-top: $size solid $color;
 }
 
 @mixin border-main-b {
-  border-bottom: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, $secondary, $primary);
-  background-color: rgb(10, 16, 22);
+	border-bottom: 2px solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: linear-gradient(to left, $secondary, $primary);
+	background-color: rgb(10, 16, 22);
 }
 
 @mixin border-main {
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, $secondary, $primary);
-  background-color: rgb(10, 16, 22);
+	border: 2px solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: linear-gradient(to left, $secondary, $primary);
+	background-color: rgb(10, 16, 22);
 }
 
 @mixin border-radius-circle {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 //! ---------------------------
 
 //! BACKGRUND IMAGE CENTER
 @mixin center-bg-img($url) {
-  background-image: url($url);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-image: url($url);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 //! ---------------------------
 
 //! BOX SHADOW
 @mixin box-shadow($args...) {
-  box-shadow: $args;
+	box-shadow: $args;
 }
 //! ---------------------------
 
 //? Flexbox Toolkit:
 
 @mixin flex-column {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 @mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @mixin flex-column-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 @mixin flex-center-vert {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 @mixin flex-center-horiz {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 //! ABSOLUTE POSITIONING
 @mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-  position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
 }
 
 //! --------------------
@@ -146,60 +149,60 @@
   */
 
 @mixin respond($breakpoint) {
-  @if ($breakpoint == "phone") {
-    @media only screen and (max-width: 575px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'phone') {
+		@media only screen and (max-width: 575px) {
+			@content;
+		}
+	}
 
-  @if ($breakpoint == "phone-land") {
-    @media only screen and (max-width: 767px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'phone-land') {
+		@media only screen and (max-width: 767px) {
+			@content;
+		}
+	}
 
-  @if ($breakpoint == "tab-port") {
-    @media only screen and (max-width: 991px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'tab-port') {
+		@media only screen and (max-width: 991px) {
+			@content;
+		}
+	}
 
-  @if ($breakpoint == "tab-land") {
-    @media only screen and (max-width: 1199px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'tab-land') {
+		@media only screen and (max-width: 1199px) {
+			@content;
+		}
+	}
 
-  @if ($breakpoint == "desktop") {
-    @media only screen and (min-width: 1200px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'desktop') {
+		@media only screen and (min-width: 1200px) {
+			@content;
+		}
+	}
 
-  @if ($breakpoint == "big-desktop") {
-    @media only screen and (min-width: 1800px) {
-      @content;
-    }
-  }
+	@if ($breakpoint == 'big-desktop') {
+		@media only screen and (min-width: 1800px) {
+			@content;
+		}
+	}
 }
 
 //don't use it untill you need this too much
 @mixin custommq($min: null, $max: null) {
-  @if ($min != null and $max != null) {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-      @content;
-    }
-  }
+	@if ($min != null and $max != null) {
+		@media only screen and (min-width: $min) and (max-width: $max) {
+			@content;
+		}
+	}
 
-  @if ($min == null and $max != null) {
-    @media only screen and (max-width: $max) {
-      @content;
-    }
-  }
+	@if ($min == null and $max != null) {
+		@media only screen and (max-width: $max) {
+			@content;
+		}
+	}
 
-  @if ($min != null and $max == null) {
-    @media only screen and (min-width: $min) {
-      @content;
-    }
-  }
+	@if ($min != null and $max == null) {
+		@media only screen and (min-width: $min) {
+			@content;
+		}
+	}
 }
